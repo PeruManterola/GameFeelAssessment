@@ -529,3 +529,8 @@ Game Feel Task NonHDRP/Temp/FSTimeGet-2489aafe7ced8d8498b9e9605797f8b5
 Game Feel Task NonHDRP/Temp/FSTimeGet-d2d1f72e652a4614fa2a047afd3e5891
 Game Feel Task NonHDRP/UserSettings/Layouts/CurrentMaximizeLayout.dwlt
 *.dwlt
+*.dwlt
+*.log
+*.json
+*.db
+*.mat
