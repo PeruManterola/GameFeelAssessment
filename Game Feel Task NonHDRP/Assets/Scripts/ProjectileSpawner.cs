@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Feedbacks;
+using UnityEngine.UI;
 
 public class ProjectileSpawner : MonoBehaviour
 {
@@ -35,8 +36,9 @@ public class ProjectileSpawner : MonoBehaviour
         bigExplosion = data.bigExplosion;
     }
 
-    public void SpawnRocket()
+    public void SpawnRocket(Button button)
     {
+        StartCoroutine(DisableButtonIE(button));
         GameObject rocket = rocketPool.GetObject();
         if (spawnAnimation)
         {
@@ -52,6 +54,13 @@ public class ProjectileSpawner : MonoBehaviour
             projectile.ThusterSound(thrusterSound);
             projectile.Launch(rocketSpeed);
         }
+    }
+
+    private IEnumerator DisableButtonIE(Button button)
+    {
+        button.interactable = false;
+        yield return new WaitForSeconds(4.5f);
+        button.interactable = true;
     }
 
     public IEnumerator RocketSpawnIE(GameObject g)
