@@ -7,10 +7,12 @@ public class TargetReset : MonoBehaviour
     private Vector3 originalPosition;
     private Quaternion originalRotation;
     private Rigidbody rb;
+    private FeedbackSettings feedbackSettings;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        feedbackSettings = FindObjectOfType<FeedbackSettings>();
     }
 
     void Start()
@@ -34,6 +36,7 @@ public class TargetReset : MonoBehaviour
         transform.position = originalPosition;
         transform.rotation = originalRotation;
         yield return new WaitForSeconds(0.1f);
-        rb.isKinematic = false;
+        if (feedbackSettings.physicsToggle.isOn == true)
+            rb.isKinematic = false;
     }
 }

@@ -41,7 +41,7 @@ Material:
     - _BUILTIN_ZTest: 4
     - _BUILTIN_ZWrite: 1
     - _BUILTIN_ZWriteControl: 0
-    - _CutoffHeight: 5.4075747
+    - _CutoffHeight: 5.407346
     - _Edge_Width: 0.11
     - _NoiseScale: 50
     - _NoiseStrength: 4.15

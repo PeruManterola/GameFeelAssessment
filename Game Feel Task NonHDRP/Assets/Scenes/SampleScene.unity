@@ -1835,7 +1835,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4296735806945739}
+      - m_Target: {fileID: 4851314581161591}
         m_TargetAssemblyTypeName: ProjectileSpawner, Assembly-CSharp
         m_MethodName: SpawnRocket
         m_Mode: 2
@@ -3723,7 +3723,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4296735806945739}
+      - m_Target: {fileID: 4457841981704792}
         m_TargetAssemblyTypeName: ProjectileSpawner, Assembly-CSharp
         m_MethodName: SpawnRocket
         m_Mode: 2
