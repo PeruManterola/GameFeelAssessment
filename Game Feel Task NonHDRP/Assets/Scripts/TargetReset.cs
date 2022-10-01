@@ -28,7 +28,6 @@ public class TargetReset : MonoBehaviour
 
     private IEnumerator ResetPositionIE()
     {
-
         yield return new WaitForSeconds(5);
         Debug.Log("Target reseted");
         rb.velocity = Vector3.zero;

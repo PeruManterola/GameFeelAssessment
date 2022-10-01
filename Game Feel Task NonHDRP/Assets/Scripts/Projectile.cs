@@ -76,7 +76,7 @@ public class Projectile : MonoBehaviour
         audioSource?.Play();
     }
 
-    //Returns the projectile to the pool after a certain time
+    //Returns the projectile to the pool 
     public void KillProjectile()
     {
         audioSource.Stop();
